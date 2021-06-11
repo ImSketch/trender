@@ -7,7 +7,7 @@ Trender es una pequeña aplicación que analiza en tiempo real los Tweets relaci
 * Clona este repositorio
 
 ```bash
-    git clone https://www.github.com/imsketch/trender
+    git clone https://www.github.com/ImSketch/trender
 ```
 
 * Instala los paquetes 
