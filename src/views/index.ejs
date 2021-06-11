@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Trender</title>
+</head>
+
+<body class='bg-light'>
+
+    <div class='container my-5'>
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-md-12">
+                <h1 class="display-6 mb-3">Trender</h1>
+            </div>
+
+            <!-- Formulario para buscar palabra o hashtag -->
+            <%- include('../templates/buscador.ejs'); %>
+
+            <!-- Ultimos tweets -->
+            <%- include('../templates/ultimosTweets.ejs', {size: 6}); %>
+
+            <!-- Mapa -->
+            <%- include('../templates/mapa.ejs', {size: 6}); %>
+
+            <!-- Grafica -->
+            <%- include('../templates/grafica.ejs', {size: 12}); %>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <%- include('../templates/scripts.ejs'); %>
+
+</body>
+
+</html>

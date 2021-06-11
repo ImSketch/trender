@@ -1,0 +1,32 @@
+<section class="col-md-<%= typeof size !== 'undefined' ? size : '6' %> mt-4 p-3">
+    <h2 class="text-secondary lead mb-3">
+
+        <!-- Indicador de escucha -->
+        <div id='listening_indicator' class='text-danger d-none d-inline blink'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-circle-fill me-auto" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
+            </svg>
+        </div>
+
+        Últimos Tweets
+
+        <!-- Contador de tweets -->
+        <span class='badge bg-white shadow-sm border text-dark' id="streaming_results_count">0</span>
+
+    </h2>
+
+    <div id="streaming_results" class='results'>
+
+        <!-- Toast principal -->
+        <div class="toast showing w-100">
+            <div class="toast-header">
+                <strong class="mr-auto">Trender</strong>
+            </div>
+            <div class="toast-body">
+                Aquí comenzarán a aparcer los tweets cuando inicies el streaming.
+            </div>
+        </div>
+
+    </div>
+</section>

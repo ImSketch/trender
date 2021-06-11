@@ -1,0 +1,19 @@
+.results {
+    overflow-y: scroll;
+    max-height: 500px;
+    padding: 1rem;
+}
+
+.map, .chart {
+    height: 500px;
+    width: 100%;
+}
+
+.blink {
+    -webkit-animation:blink-1 2s ease-out infinite both;
+    animation:blink-1 2s ease-out infinite both;
+}
+
+
+/** Animations */
+@-webkit-keyframes blink-1{0%,50%,100%{opacity:1}25%,75%{opacity:0}}@keyframes blink-1{0%,50%,100%{opacity:1}25%,75%{opacity:0}}

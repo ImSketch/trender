@@ -1,0 +1,7 @@
+<section class="col-md-<%= typeof size !== 'undefined' ? size : '12' %> mt-4 p-3">
+    <h2 class="text-secondary lead mb-3">Mapa</h2>
+    <div id="map" class='map'></div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=<%= config.google_maps.api_key %>&libraries=visualization&callback=initMap">
+        </script>
+</section>
