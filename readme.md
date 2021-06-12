@@ -35,3 +35,7 @@ module.exports = {
 ```bash
     npm run start
 ```
+
+## Bugs
+📌 No se muestran todas las ubicaciones en el mapa (la conexión a la API externa se satura si hay muchos tweets)
+📌 No se descarga correctamente el .csv (faltan tweets y no se orgnaiza de la forma debida)
